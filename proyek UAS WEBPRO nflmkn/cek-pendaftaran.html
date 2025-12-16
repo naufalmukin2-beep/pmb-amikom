@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cek Status Pendaftaran PMB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap OFFLINE -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style-cek.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Logo Gram AMIKOM UNIVERSITY.svg">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#431599;">
+    <div class="container-fluid px-5">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/amikom logo.png" width="150">
+        </a>
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="daftar.html">Daftar</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="cek-pendaftaran.html">Cek Pendaftaran</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= CEK SECTION ================= -->
+<section class="cek-section">
+    <div class="container">
+        <div class="cek-card mx-auto">
+            <h2 class="text-center mb-4">Cek Status Pendaftaran</h2>
+
+            <form id="formCek">
+                <div class="mb-3">
+                    <label>Email Pendaftaran</label>
+                    <input type="email" id="cekEmail" class="form-control" placeholder="contoh@email.com">
+                </div>
+
+                <div class="mb-4">
+                    <label>NIK</label>
+                    <input type="text" id="cekNik" class="form-control" placeholder="Masukkan NIK">
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100 btn-lg">
+                    Cek Status
+                </button>
+            </form>
+
+            <!-- HASIL -->
+            <div id="hasil" class="hasil-box d-none"></div>
+        </div>
+    </div>
+</section>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
